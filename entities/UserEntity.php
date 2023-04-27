@@ -58,7 +58,8 @@ class UserEntity
         return $this->nom . " " . $this->prenom;
     }
 
-    public function toJson() {
+    public function toArray(): array
+    {
         return [
             'id' => $this->getId(),
             'mail' => $this->getMail(),

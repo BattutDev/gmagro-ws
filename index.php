@@ -23,5 +23,9 @@ switch ($controller) {
         if (!$action) $action = \controllers\AuthController::$default_action;
         $c = new controllers\AuthController($action, true);
         break;
+    case 'interventions':
+        if (!$action) $action = \controllers\InterventionController::$default_action;
+        $c = new controllers\InterventionController($action, true);
+        break;
 
 }
